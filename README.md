@@ -1,14 +1,18 @@
 # ES-Operation
 
 ## access ES
-in order to get access to ES cluster, a url of the following format is essential:
+* in order to get access to ES cluster, a url of the following format is essential:
 
   >url = host + '/' + index + '/' + type
   
-  >host = 'https://search-jan2-jsuwsxlwenpntew53nwxoz74gy.us-west-2.es.amazonaws.com' # for instance
+  >host = 'https://example.com' # for instance
   
-  >index = 'lambda-s3-index' #for instance
+  >index = 'index_1' #for instance
   
   >type = '_doc'
     
   >headers = { "Content-Type": "application/json" }
+
+* make sure that an index named 'index_1' is created in ES.
+
+## 
