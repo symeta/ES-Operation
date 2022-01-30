@@ -17,7 +17,7 @@
 
 ## Dev Tools operation
 * create index
-  >`PUT f_9
+`PUT f_9
 {
   "mappings": {
     "properties": {
