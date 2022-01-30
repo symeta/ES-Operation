@@ -8,4 +8,10 @@ in order to get access to ES cluster, a url of the following format is essential
   index = 'lambda-s3-index' #for instance
   type = '_doc'
   
+
+## 4
+
+* 1
+* 2
+* 3  
   headers = { "Content-Type": "application/json" }
