@@ -14,15 +14,32 @@
 ## Dev Tools operation
 * create index
 ```
-PUT f_9
+PUT index_1
 {
   "mappings": {
     "properties": {
-      "time_local":{
-        "format": "dd/MMM/yyyy:HH:mm:ss Z||epoch_millis",
-        "type": "date"
+      "timestamp":{
+        "type": "date",
+        "format": "dd/MMM/yyyy:HH:mm:ss Z||epoch_millis"
       }
     }
   }
+}
+```
+27/Jan/2022:15:26:09 +0800
+
+* get index meta info
+```
+get index_1
+```
+* get index records info
+```
+get index_1/_search
+```
+* put a record into index
+```
+put index_1/_doc/1?pretty
+{
+  "timestamp":"26/01/2022:15:26:09 +0800"
 }
 ```
